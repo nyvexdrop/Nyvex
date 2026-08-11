@@ -1,0 +1,102 @@
+[
+  {
+    "nombre": "Capucha Dragón para Hombre",
+    "precio": 199,
+    "categoria": "sudaderas",
+    "emoji": "🧥",
+    "imagen": "img/sudaderadragon.png",
+    "descripcion": "Capucha para hombre con estampado de dragón, cordón ajustable y bolsillo canguro. Ajuste cómodo, estilo casual ideal para otoño e invierno. Color: Negro. Talla: Estándar MX. Envío local.",
+    "tallas": "Estándar MX",
+    "envio": "local"
+  },
+  {
+    "nombre": "Camiseta Flow para Hombre",
+    "precio": 190,
+    "categoria": "sudaderas",
+    "emoji": "🧥",
+    "imagen": "img/sudaderaporshe.png",
+    "descripcion": "Nueva Camiseta Flow para Hombre. Sudadera estampada diaria con diseños de coches deportivos, coches de lujo y coches de carreras. Tejido suave y confortable, bolsillo delantero. Color: Negro. Tallas: S, M, L, XL. Envío local. Ideal para regalo en Pascua, Halloween, Acción de Gracias y Navidad.",
+    "tallas": "S, M, L, XL",
+    "envio": "local"
+  },
+  {
+    "nombre": "Perfume Oud Premium",
+    "precio": 35,
+    "categoria": "perfumes",
+    "emoji": "🧴",
+    "imagen": "",
+    "descripcion": "Fragancia intensa para hombre. Larga duración."
+  },
+  {
+    "nombre": "Perfume Esencia Urbana",
+    "precio": 28,
+    "categoria": "perfumes",
+    "emoji": "🧴",
+    "imagen": "",
+    "descripcion": "Aroma fresco para uso diario."
+  },
+  {
+    "nombre": "Sudadera NYVEX Classic",
+    "precio": 45,
+    "categoria": "sudaderas",
+    "emoji": "🧥",
+    "imagen": "",
+    "descripcion": "Algodón premium, corte clásico."
+  },
+  {
+    "nombre": "Sudadera Oversize Black",
+    "precio": 50,
+    "categoria": "sudaderas",
+    "emoji": "🧥",
+    "imagen": "",
+    "descripcion": "Estilo oversize, tendencia urbana."
+  },
+  {
+    "nombre": "Audífonos Bass Boost",
+    "precio": 25,
+    "categoria": "audifonos",
+    "emoji": "🎧",
+    "imagen": "",
+    "descripcion": "Graves potentes, inalámbricos."
+  },
+  {
+    "nombre": "Audífonos Wireless Pro",
+    "precio": 40,
+    "categoria": "audifonos",
+    "emoji": "🎧",
+    "imagen": "",
+    "descripcion": "Cancelación de ruido, carga rápida."
+  },
+  {
+    "nombre": "Gorra NYVEX Snapback",
+    "precio": 15,
+    "categoria": "gorras",
+    "emoji": "🧢",
+    "imagen": "",
+    "descripcion": "Gorra ajustable con bordado NYVEX."
+  },
+  {
+    "nombre": "Gorra Trucker Edición Limitada",
+    "precio": 18,
+    "categoria": "gorras",
+    "emoji": "🧢",
+    "imagen": "",
+    "descripcion": "Edición limitada, malla transpirable."
+  },
+  {
+    "nombre": "Tenis Street Runner",
+    "precio": 75,
+    "categoria": "tenis",
+    "emoji": "👟",
+    "imagen": "",
+    "descripcion": "Cómodos y ligeros para la calle."
+  },
+  {
+    "nombre": "Tenis Urban Classic",
+    "precio": 65,
+    "categoria": "tenis",
+    "emoji": "👟",
+    "imagen": "",
+    "descripcion": "Diseño clásico que combina con todo."
+  }
+]
