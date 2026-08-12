@@ -1,5 +1,65 @@
 [
   {
+    "nombre": "Auriculares Gaming LED",
+    "precio": 109,
+    "categoria": "audifonos",
+    "emoji": "🎧",
+    "imagen": "img/audifonosbara.png",
+    "descripcion": "Auriculares inalámbricos gaming con pantalla LED de energía. Bluetooth 5.3, micrófono con cancelación de ruido, control táctil, impermeables IPX8. Sonido HiFi estéreo con bajos profundos. Compatibles con iOS y Android. Envío local.",
+    "tallas": "",
+    "envio": "local"
+  },
+  {
+    "nombre": "Auriculares RGB Pantalla LED",
+    "precio": 130,
+    "categoria": "audifonos",
+    "emoji": "🎧",
+    "imagen": "img/aidofonosrgb.png",
+    "descripcion": "Auriculares inalámbricos de alta gama con pantalla LED y funcionamiento táctil. Excelente calidad de sonido para deportes, música y juegos. Compatibles con iOS y Android. Ideales como regalo. Color: Negro. Envío local.",
+    "tallas": "",
+    "envio": "local"
+  },
+  {
+    "nombre": "Audífonos Diadema Bluetooth 5.4",
+    "precio": 160,
+    "categoria": "audifonos",
+    "emoji": "🎧",
+    "imagen": "img/audifoosdediadema.png",
+    "descripcion": "Audífonos diadema over-ear Bluetooth 5.4 con micrófono HD y baja latencia. Plegables y ergonómicos para estudiar, ver series y jugar en celular, laptop y consola. Conexión estable sin cortes. Colores: Aperlado, Rosa, Azul y Celeste. Envío local.",
+    "tallas": "",
+    "envio": "local"
+  },
+  {
+    "nombre": "Auriculares Inalámbricos Pro",
+    "precio": 130,
+    "categoria": "audifonos",
+    "emoji": "🎧",
+    "imagen": "img/airpodspro.png",
+    "descripcion": "Auriculares inalámbricos Bluetooth de alta calidad. Sonido lossless, llamadas claras, hasta 24h de música, chip Bluetooth 5.3 mejorado (+80% calidad de sonido). Compatibles con todas las marcas de celulares. Almacén local, sin impuestos de importación. Color: Blanco. Envío local. Sin cancelación de ruido (no tienen ANC).",
+    "tallas": "",
+    "envio": "local"
+  },
+  {
+    "nombre": "Sudadera Katana Japonesa para Hombre",
+    "precio": 190,
+    "categoria": "sudaderas",
+    "emoji": "🧥",
+    "imagen": "img/sudaderakatana.png",
+    "descripcion": "Sudadera con capucha negra para hombre, con estampado gráfico único de katana y flor de cerezo rosa con caracteres japoneses. Cómoda, disponible en varias tallas. Perfecta para actividades al aire libre y uso diario casual. Color: Negro. Tallas: S, M, L, XL. Envío local.",
+    "tallas": "S, M, L, XL",
+    "envio": "local"
+  },
+  {
+    "nombre": "Sudadera Gringa para Hombre",
+    "precio": 190,
+    "categoria": "sudaderas",
+    "emoji": "🧥",
+    "imagen": "img/sudaderagriega.png",
+    "descripcion": "Casual para hombres, estilo con estampado motivacional en inglés. Ligera, elástica, tejido de poliéster, ajuste regular. Sudadera con capucha. Color: Negro. Tallas: S, M, L, XL. Envío local.",
+    "tallas": "S, M, L, XL",
+    "envio": "local"
+  },
+  {
     "nombre": "Capucha Dragón para Hombre",
     "precio": 199,
     "categoria": "sudaderas",
