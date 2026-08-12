@@ -78,7 +78,7 @@ a {
   padding: 0.4rem 0;
   transition: color 0.2s;
 }
- 
+
 .nav-links a:hover {
   color: var(--gris);
 }

@@ -26,58 +26,13 @@ navLinks.querySelectorAll("a").forEach((link) => {
 // que es la misma que productos.json, para que siempre se vean todos.
 const productosRespaldo = [
   {
-    nombre: "Auriculares Gaming LED",
-    precio: 109,
-    categoria: "audifonos",
-    emoji: "🎧",
-    imagen: "img/audifonosbara.png",
-    descripcion:
-      "Auriculares inalámbricos gaming con pantalla LED de energía. Bluetooth 5.3, micrófono con cancelación de ruido, control táctil, impermeables IPX8. Sonido HiFi estéreo con bajos profundos. Compatibles con iOS y Android. Envío local."
-  },
-  {
-    nombre: "Auriculares RGB Pantalla LED",
-    precio: 130,
-    categoria: "audifonos",
-    emoji: "🎧",
-    imagen: "img/aidofonosrgb.png",
-    descripcion:
-      "Auriculares inalámbricos de alta gama con pantalla LED y funcionamiento táctil. Excelente calidad de sonido para deportes, música y juegos. Compatibles con iOS y Android. Ideales como regalo. Color: Negro. Envío local."
-  },
-  {
-    nombre: "Audífonos Diadema Bluetooth 5.4",
-    precio: 160,
-    categoria: "audifonos",
-    emoji: "🎧",
-    imagen: "img/audifoosdediadema.png",
-    descripcion:
-      "Audífonos diadema over-ear Bluetooth 5.4 con micrófono HD y baja latencia. Plegables y ergonómicos para estudiar, ver series y jugar en celular, laptop y consola. Conexión estable sin cortes. Colores: Aperlado, Rosa, Azul y Celeste. Envío local."
-  },
-  {
-    nombre: "Auriculares Inalámbricos Pro",
-    precio: 130,
-    categoria: "audifonos",
-    emoji: "🎧",
-    imagen: "img/airpodspro.png",
-    descripcion:
-      "Auriculares inalámbricos Bluetooth de alta calidad. Sonido lossless, llamadas claras, hasta 24h de música, chip Bluetooth 5.3 mejorado (+80% calidad de sonido). Compatibles con todas las marcas de celulares. Almacén local, sin impuestos de importación. Color: Blanco. Envío local. Sin cancelación de ruido (no tienen ANC)."
-  },
-  {
-    nombre: "Sudadera Katana Japonesa para Hombre",
+    nombre: "Camiseta Flow para Hombre",
     precio: 190,
     categoria: "sudaderas",
     emoji: "🧥",
-    imagen: "img/sudaderakatana.png",
+    imagen: "img/sudaderaporshe.png",
     descripcion:
-      "Sudadera con capucha negra para hombre, con estampado gráfico único de katana y flor de cerezo rosa con caracteres japoneses. Cómoda, disponible en varias tallas. Perfecta para actividades al aire libre y uso diario casual. Color: Negro. Tallas: S, M, L, XL. Envío local."
-  },
-  {
-    nombre: "Sudadera Gringa para Hombre",
-    precio: 190,
-    categoria: "sudaderas",
-    emoji: "🧥",
-    imagen: "img/sudaderagriega.png",
-    descripcion:
-      "Casual para hombres, estilo con estampado motivacional en inglés. Ligera, elástica, tejido de poliéster, ajuste regular. Sudadera con capucha. Color: Negro. Tallas: S, M, L, XL. Envío local."
+      "Nueva Camiseta Flow para Hombre. Sudadera estampada diaria con diseños de coches deportivos, coches de lujo y coches de carreras. Tejido suave y confortable, bolsillo delantero. Color: Negro. Tallas: S, M, L, XL. Envío local. Ideal para regalo en Pascua, Halloween, Acción de Gracias y Navidad."
   },
   {
     nombre: "Capucha Dragón para Hombre",
@@ -89,24 +44,95 @@ const productosRespaldo = [
       "Capucha para hombre con estampado de dragón, cordón ajustable y bolsillo canguro. Ajuste cómodo, estilo casual ideal para otoño e invierno. Color: Negro. Talla: Estándar MX. Envío local."
   },
   {
-    nombre: "Camiseta Flow para Hombre",
+    nombre: "Sudadera Gringa para Hombre",
     precio: 190,
     categoria: "sudaderas",
     emoji: "🧥",
-    imagen: "img/sudaderaporshe.png",
+    imagen: "img/sudaderagriega.png",
     descripcion:
-      "Nueva Camiseta Flow para Hombre. Sudadera estampada diaria con diseños de coches deportivos, coches de lujo y coches de carreras. Tejido suave y confortable, bolsillo delantero. Color: Negro. Tallas: S, M, L, XL. Envío local. Ideal para regalo en Pascua, Halloween, Acción de Gracias y Navidad."
+      "Casual para hombres, estilo con estampado motivacional en inglés. Ligera, elástica, tejido de poliéster, ajuste regular. Sudadera con capucha. Color: Negro. Tallas: S, M, L, XL. Envío local."
   },
-  { nombre: "Perfume Oud Premium", precio: 35, categoria: "perfumes", emoji: "🧴", imagen: "", descripcion: "Fragancia intensa para hombre. Larga duración." },
-  { nombre: "Perfume Esencia Urbana", precio: 28, categoria: "perfumes", emoji: "🧴", imagen: "", descripcion: "Aroma fresco para uso diario." },
-  { nombre: "Sudadera NYVEX Classic", precio: 45, categoria: "sudaderas", emoji: "🧥", imagen: "", descripcion: "Algodón premium, corte clásico." },
-  { nombre: "Sudadera Oversize Black", precio: 50, categoria: "sudaderas", emoji: "🧥", imagen: "", descripcion: "Estilo oversize, tendencia urbana." },
-  { nombre: "Audífonos Bass Boost", precio: 25, categoria: "audifonos", emoji: "🎧", imagen: "", descripcion: "Graves potentes, inalámbricos." },
-  { nombre: "Audífonos Wireless Pro", precio: 40, categoria: "audifonos", emoji: "🎧", imagen: "", descripcion: "Cancelación de ruido, carga rápida." },
-  { nombre: "Gorra NYVEX Snapback", precio: 15, categoria: "gorras", emoji: "🧢", imagen: "", descripcion: "Gorra ajustable con bordado NYVEX." },
-  { nombre: "Gorra Trucker Edición Limitada", precio: 18, categoria: "gorras", emoji: "🧢", imagen: "", descripcion: "Edición limitada, malla transpirable." },
-  { nombre: "Tenis Street Runner", precio: 75, categoria: "tenis", emoji: "👟", imagen: "", descripcion: "Cómodos y ligeros para la calle." },
-  { nombre: "Tenis Urban Classic", precio: 65, categoria: "tenis", emoji: "👟", imagen: "", descripcion: "Diseño clásico que combina con todo." },
+  {
+    nombre: "Sudadera Katana Japonesa para Hombre",
+    precio: 190,
+    categoria: "sudaderas",
+    emoji: "🧥",
+    imagen: "img/sudaderakatana.png",
+    descripcion:
+      "Sudadera con capucha negra para hombre, con estampado gráfico único de katana y flor de cerezo rosa con caracteres japoneses. Cómoda, disponible en varias tallas. Perfecta para actividades al aire libre y uso diario casual. Color: Negro. Tallas: S, M, L, XL. Envío local."
+  },
+  {
+    nombre: "Auriculares Inalámbricos Pro",
+    precio: 130,
+    categoria: "audifonos",
+    emoji: "🎧",
+    imagen: "img/airpodspro.png",
+    descripcion:
+      "Auriculares inalámbricos Bluetooth de alta calidad. Sonido lossless, llamadas claras, hasta 24h de música, chip Bluetooth 5.3 mejorado (+80% calidad de sonido). Compatibles con todas las marcas de celulares. Almacén local, sin impuestos de importación. Color: Blanco. Envío local. Sin cancelación de ruido (no tienen ANC)."
+  },
+  {
+    nombre: "AirPods 2 Pro con Cancelación",
+    precio: 300,
+    categoria: "audifonos",
+    emoji: "🎧",
+    imagen: "img/airpodspreo2.png",
+    descripcion:
+      "AirPods 2 Pro con cancelación de ruido REAL. Entrada tipo C, aparece la interfaz en iOS como los originales. Carga inalámbrica, incluye cable de carga y tamaños de almohadillas. GPS (emiten sonido para rastrearlos en la app 'Encontrar' de Apple). Certificados Apple. Control táctil en cada AirPod (cambiar canción y pausa). Batería de 6-7 horas. Envío local."
+  },
+  {
+    nombre: "AirPods Pro 3 Traducción Real",
+    precio: 370,
+    categoria: "audifonos",
+    emoji: "🎧",
+    imagen: "img/airpodspro3.png",
+    descripcion:
+      "AirPods Pro 3 con cancelación de ruido REAL, 2 veces mejor que la generación anterior. Entrada tipo C, interfaz en iOS como los originales. Carga inalámbrica. Traductor de idiomas en vivo y 100% funcional. Mide el ritmo cardiaco. GPS (emiten sonido para rastrearlos en la app 'Encontrar' de Apple). Certificados Apple. Control táctil en cada AirPod. Incluye tamaños de almohadillas. Batería de 6-7 horas. Envío local."
+  },
+  {
+    nombre: "AirPods 4",
+    precio: 354,
+    categoria: "audifonos",
+    emoji: "🎧",
+    imagen: "img/airpods4.png",
+    descripcion:
+      "AirPods 4 con cancelación de ruido REAL. Aparece la interfaz en iOS como los originales. Entrada tipo C. GPS (emiten sonido para rastrearlos en la app 'Encontrar' de Apple). Certificados Apple. Control táctil en cada AirPod (cambiar canción y pausa). Duración de batería de 7-8 horas. Envío local."
+  },
+  {
+    nombre: "AirPods Max",
+    precio: 370,
+    categoria: "audifonos",
+    emoji: "🎧",
+    imagen: "img/audifonosdiadema.png",
+    descripcion:
+      "AirPods Max, audífonos de diadema con cancelación de ruido REAL. Aparece la interfaz en iOS como los originales. Entrada tipo C, carga rápida. GPS (emiten sonido para rastrearlos en la app 'Encontrar' de Apple). Certificados Apple. Control táctil para cambiar canción y pausar. Cómodos para uso prolongado. Envío local."
+  },
+  {
+    nombre: "Cable C a Lightning (1m)",
+    precio: 75,
+    categoria: "accesorios",
+    emoji: "🔌",
+    imagen: "img/cablec.png",
+    descripcion:
+      "Cable de carga USB-C a Lightning de 1 metro. Compatible con iPhone, iPad, AirPods y otros dispositivos Apple. Carga rápida y transferencia de datos. Envío local."
+  },
+  {
+    nombre: "Batería MagSafe 5000 mAh",
+    precio: 190,
+    categoria: "accesorios",
+    emoji: "🔋",
+    imagen: "img/bateria5000.png",
+    descripcion:
+      "Batería portátil MagSafe de 5000 mAh. Carga inalámbrica por imanes, compatible con iPhone y AirPods. Compacta, ligera y con entrada USB-C. Ideal para llevar energía extra a donde vayas. Envío local."
+  },
+  {
+    nombre: "Batería MagSafe 10,000 mAh",
+    precio: 240,
+    categoria: "accesorios",
+    emoji: "🔋",
+    imagen: "img/bateria10000.png",
+    descripcion:
+      "Batería portátil MagSafe de 10,000 mAh. Carga inalámbrica por imanes, compatible con iPhone y AirPods. Mayor capacidad para varios ciclos de carga, con entrada USB-C. Perfecta para viajes y uso intenso. Envío local."
+  },
 ];
 
 let productos = productosRespaldo;
