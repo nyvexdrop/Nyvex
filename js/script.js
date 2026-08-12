@@ -133,6 +133,24 @@ const productosRespaldo = [
     descripcion:
       "Batería portátil MagSafe de 10,000 mAh. Carga inalámbrica por imanes, compatible con iPhone y AirPods. Mayor capacidad para varios ciclos de carga, con entrada USB-C. Perfecta para viajes y uso intenso. Envío local."
   },
+  {
+    nombre: "iPhone 14",
+    precio: 6300,
+    categoria: "celulares",
+    emoji: "📱",
+    imagen: "img/iphone4.png",
+    descripcion:
+      "iPhone 14 de 128 GB con eSIM AT&T. Estética 10/10, sin piezas cambiadas. Batería al 98% de capacidad. Envío local."
+  },
+  {
+    nombre: "Rasasi Hawas Ice for Him",
+    precio: 1100,
+    categoria: "perfumes",
+    emoji: "🧴",
+    imagen: "img/RasasiHawasIce forHim.png",
+    descripcion:
+      "Perfume masculino con aroma fresco, dulce y elegante, perfecto para destacar en cualquier ocasión. Hawas Ice combina una sensación refrescante con un toque moderno y juvenil. Aroma acuático, ideal para días calurosos, citas, fiestas y uso diario. Estilo juvenil, limpio y llamativo. Presentación elegante, perfecta para colección o regalo. Envío local."
+  },
 ];
 
 let productos = productosRespaldo;
