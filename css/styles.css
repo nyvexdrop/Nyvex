@@ -212,6 +212,12 @@ a {
   margin: 0.7rem auto 0;
 }
 
+.seccion-sub {
+  text-align: center;
+  color: var(--gris);
+  margin-bottom: 2rem;
+}
+
 /* ===== CATEGORÍAS ===== */
 .categorias-grid {
   display: grid;
@@ -314,6 +320,40 @@ a {
 .producto-boton:hover {
   background-color: var(--blanco);
   color: var(--negro);
+}
+
+/* ===== DIVISORES Y SECCIONES DE PRODUCTOS ===== */
+.seccion-divisor {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border) 30%, var(--border) 70%, transparent);
+  margin: 3.5rem 0;
+}
+
+.seccion-prod-titulo {
+  text-align: center;
+  font-size: 1.35rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.producto-proximamente .producto-img {
+  opacity: 0.55;
+}
+
+.producto-badge-prox {
+  margin-top: auto;
+  background: none;
+  border: 1px dashed var(--border);
+  color: var(--gris);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  text-align: center;
+  align-self: flex-start;
 }
 
 /* ===== NOSOTROS ===== */

@@ -6,6 +6,26 @@
 // Ejemplo para Guadalajara: 3312345678 → 523312345678
 const WHATSAPP_NUMERO = "525534897969";
 
+// Tenis: aún no disponibles, se muestran como "Próximamente"
+const TENIS_PROXIMAMENTE = [
+  { nombre: "Tenis Urbanos", emoji: "👟" },
+  { nombre: "Tenis Deportivos", emoji: "👟" },
+  { nombre: "Tenis Retro", emoji: "👟" },
+];
+
+const SECCIONES = [
+  { cat: "sudaderas", titulo: "Sudaderas", emoji: "🧥" },
+  { cat: "audifonos", titulo: "Audífonos", emoji: "🎧" },
+  { cat: "accesorios", titulo: "Accesorios", emoji: "🔌" },
+  { cat: "celulares", titulo: "Celulares", emoji: "📱" },
+  { cat: "perfumes", titulo: "Perfumes", emoji: "🧴" },
+  { cat: "tenis", titulo: "Tenis", emoji: "👟" },
+];
+
+function precio(n) {
+  return "$" + Number(n).toLocaleString("es-MX");
+}
+
 // --- Menú móvil ---
 const menuToggle = document.getElementById("menuToggle");
 const navLinks = document.getElementById("navLinks");
@@ -171,30 +191,66 @@ async function cargarProductos() {
 
 const grid = document.getElementById("productosGrid");
 
-function renderProductos() {
-  grid.innerHTML = productos
-    .map((p) => {
-      const imgHtml = p.imagen
-        ? `<img src="${p.imagen}" alt="${p.nombre}" class="producto-img-real">`
-        : `<span class="producto-img-emoji">${p.emoji || "🛍️"}</span>`;
-      const descHtml = p.descripcion
-        ? `<p class="producto-descripcion">${p.descripcion}</p>`
-        : "";
-
-      return `
-      <article class="producto">
-        <div class="producto-img">${imgHtml}</div>
+function renderProducto(p) {
+  if (p.proximamente) {
+    return `
+      <article class="producto producto-proximamente">
+        <div class="producto-img">
+          <span class="producto-img-emoji">${p.emoji || "👟"}</span>
+        </div>
         <div class="producto-info">
           <p class="producto-nombre">${p.nombre}</p>
-          ${descHtml}
-          <p class="producto-precio">$${Number(p.precio).toFixed(2)}</p>
-          <button class="producto-boton" data-nombre="${p.nombre}" data-precio="${p.precio}">
-            💬 Comprar por WhatsApp
-          </button>
+          <span class="producto-badge-prox">⏳ PRÓXIMAMENTE</span>
         </div>
       </article>`;
-    })
-    .join("");
+  }
+
+  const imgHtml = p.imagen
+    ? `<img src="${p.imagen}" alt="${p.nombre}" class="producto-img-real">`
+    : `<span class="producto-img-emoji">${p.emoji || "🛍️"}</span>`;
+  const descHtml = p.descripcion
+    ? `<p class="producto-descripcion">${p.descripcion}</p>`
+    : "";
+
+  return `
+    <article class="producto">
+      <div class="producto-img">${imgHtml}</div>
+      <div class="producto-info">
+        <p class="producto-nombre">${p.nombre}</p>
+        ${descHtml}
+        <p class="producto-precio">${precio(p.precio)}</p>
+        <button class="producto-boton" data-nombre="${p.nombre}" data-precio="${p.precio}">
+          💬 Comprar por WhatsApp
+        </button>
+      </div>
+    </article>`;
+}
+
+function renderSeccion(seccion, lista, i) {
+  const divisor = i === 0 ? "" : `<div class="seccion-divisor"></div>`;
+  return `
+    ${divisor}
+    <div class="seccion-prod">
+      <h3 class="seccion-prod-titulo">${seccion.emoji} ${seccion.titulo}</h3>
+      <div class="productos-grid">
+        ${lista.map((p) => renderProducto(p)).join("")}
+      </div>
+    </div>`;
+}
+
+function renderProductos() {
+  let html = "";
+  let i = 0;
+  SECCIONES.forEach((seccion) => {
+    const lista =
+      seccion.cat === "tenis"
+        ? TENIS_PROXIMAMENTE.map((t) => ({ ...t, proximamente: true }))
+        : productos.filter((p) => p.categoria === seccion.cat);
+    if (!lista.length) return;
+    html += renderSeccion(seccion, lista, i);
+    i++;
+  });
+  grid.innerHTML = html;
 }
 
 // --- Botón de compra → abre WhatsApp con el mensaje listo ---
@@ -204,7 +260,7 @@ document.addEventListener("click", (e) => {
 
   const nombre = boton.dataset.nombre;
   const precio = boton.dataset.precio;
-  const mensaje = `Hola Nyvex Drop 👋 Me interesa este producto: *${nombre}* por $${precio}.00. ¿Está disponible? ¿Cuánto cuesta el envío a mi zona?`;
+  const mensaje = `Hola Nyvex Drop 👋 Me interesa este producto: *${nombre}* por $${precio}. ¿Está disponible? ¿Cuánto cuesta el envío a mi zona?`;
 
   window.open(
     `https://wa.me/${WHATSAPP_NUMERO}?text=${encodeURIComponent(mensaje)}`,
