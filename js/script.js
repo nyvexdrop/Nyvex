@@ -47,7 +47,7 @@ navLinks.querySelectorAll("a").forEach((link) => {
 const productosRespaldo = [
   {
     nombre: "Camiseta Flow para Hombre",
-    precio: 190,
+    precio: 199.99,
     categoria: "sudaderas",
     emoji: "🧥",
     imagen: "img/sudaderaporshe.png",
@@ -56,7 +56,7 @@ const productosRespaldo = [
   },
   {
     nombre: "Capucha Dragón para Hombre",
-    precio: 199,
+    precio: 199.99,
     categoria: "sudaderas",
     emoji: "🧥",
     imagen: "img/sudaderadragon.png",
@@ -65,7 +65,7 @@ const productosRespaldo = [
   },
   {
     nombre: "Sudadera Gringa para Hombre",
-    precio: 190,
+    precio: 199.99,
     categoria: "sudaderas",
     emoji: "🧥",
     imagen: "img/sudaderagriega.png",
@@ -74,7 +74,7 @@ const productosRespaldo = [
   },
   {
     nombre: "Sudadera Katana Japonesa para Hombre",
-    precio: 190,
+    precio: 199.99,
     categoria: "sudaderas",
     emoji: "🧥",
     imagen: "img/sudaderakatana.png",
@@ -83,7 +83,7 @@ const productosRespaldo = [
   },
   {
     nombre: "Auriculares Inalámbricos Pro",
-    precio: 130,
+    precio: 139.99,
     categoria: "audifonos",
     emoji: "🎧",
     imagen: "img/airpodspro.png",
@@ -92,7 +92,7 @@ const productosRespaldo = [
   },
   {
     nombre: "AirPods 2 Pro con Cancelación",
-    precio: 300,
+    precio: 309.99,
     categoria: "audifonos",
     emoji: "🎧",
     imagen: "img/airpodspreo2.png",
@@ -101,7 +101,7 @@ const productosRespaldo = [
   },
   {
     nombre: "AirPods Pro 3 Traducción Real",
-    precio: 370,
+    precio: 379.99,
     categoria: "audifonos",
     emoji: "🎧",
     imagen: "img/airpodspro3.png",
@@ -110,7 +110,7 @@ const productosRespaldo = [
   },
   {
     nombre: "AirPods 4",
-    precio: 354,
+    precio: 359.99,
     categoria: "audifonos",
     emoji: "🎧",
     imagen: "img/airpods4.png",
@@ -119,7 +119,7 @@ const productosRespaldo = [
   },
   {
     nombre: "AirPods Max",
-    precio: 370,
+    precio: 379.99,
     categoria: "audifonos",
     emoji: "🎧",
     imagen: "img/audifonosdiadema.png",
@@ -128,7 +128,7 @@ const productosRespaldo = [
   },
   {
     nombre: "Cable C a Lightning (1m)",
-    precio: 75,
+    precio: 75.99,
     categoria: "accesorios",
     emoji: "🔌",
     imagen: "img/cablec.png",
@@ -137,7 +137,7 @@ const productosRespaldo = [
   },
   {
     nombre: "Batería MagSafe 5000 mAh",
-    precio: 190,
+    precio: 199.99,
     categoria: "accesorios",
     emoji: "🔋",
     imagen: "img/bateria5000.png",
@@ -146,7 +146,7 @@ const productosRespaldo = [
   },
   {
     nombre: "Batería MagSafe 10,000 mAh",
-    precio: 240,
+    precio: 249.99,
     categoria: "accesorios",
     emoji: "🔋",
     imagen: "img/bateria10000.png",
@@ -155,7 +155,7 @@ const productosRespaldo = [
   },
   {
     nombre: "iPhone 14",
-    precio: 6300,
+    precio: 6399.99,
     categoria: "celulares",
     emoji: "📱",
     imagen: "img/iphone4.png",
@@ -164,7 +164,7 @@ const productosRespaldo = [
   },
   {
     nombre: "Rasasi Hawas Ice for Him",
-    precio: 1100,
+    precio: 1199.99,
     categoria: "perfumes",
     emoji: "🧴",
     imagen: "img/RasasiHawasIce forHim.png",
